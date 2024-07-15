@@ -1,0 +1,149 @@
+body {
+    background-image: url("/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #222; */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    /* background-blend-mode: color-dodge */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    opacity: 0.95;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+p {
+    color: red;
+    text-align: center;
+    font-size: smaller;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    color: #ccc;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rating label:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    color: #f50c0c;
+}
+
+.rating label input {
+    display: none;
+}
+
+.rating label img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.rating label img:hover {
+    transform: scale(1.2);
+}
+
+.rating label.selected img {
+    border: 10px solid red;
+    border-radius: 50%;
+}
+
+.section.mandatory {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #12b300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#userInfoSection {
+    display: none;
+}
+
+#thankYouSection {
+    display: none;
+}
+
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
